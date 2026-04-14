@@ -153,7 +153,7 @@
 			},
 			{
 				"name": "Republic of Korea",
-				"additionalRules": ["",""]
+				"additionalRules": ["Tae Guk Gi - If the enemy force includes KPA Units, all your Infantry and Artillery Units gain Fanatic; Bolt Action Korea Rules Book, Pg. 97","Conscription - May include a free Conscript Rifle Squad; Bolt Action Korea Rules Book, Pg. 97","Defensive Posture - In missions that have an Attacker/Defender, there is a reroll if ROK is not Defender. If ROK is Defender, gain the following:\n • First turn, opponent cannot issue Run orders.\n • Reroll for Artillery or Smoke barrage once.\n • Any ROK units that are Hidden may start with an Ambush.\n • Gain access to D3 emplacements after determining table edges.\n Bolt Action Korea Rules Book, Pg. 97"]
 			},
 			{
 				"name": "USA / UN",
@@ -165,7 +165,7 @@
 		"platoons": [
 			{
 				"name": "North Korean Reinforced Platoon",
-				"unlimited": false,
+				"unlimited": true,
 				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Secionts: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Bazooka Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
 				"decreaseModelCount": 1,
 				"factions": [
@@ -178,7 +178,7 @@
 			},
 			{
 				"name": "Reinforced Platoon",
-				"unlimited": false,
+				"unlimited": true,
 				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Secionts: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
 				"decreaseModelCount": 1,
 				"factions": [
@@ -252,12 +252,153 @@
 		],
 		"units": [
 			{
+				"name": "---------------------------------------",
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon" }]
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon" }]		
+					}
+				],
+				"points": 0,
+				"models": 0,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1000,
+						"key": "Splitter"
+					},
+				"sortPriority": 2,
+				"keywords": [],
+				"specialText": "Splitter, Stop Looking",
+				"equipment": []
+			},
+			{
+				"name": "------------------------------------------",
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon" }]
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon" }]		
+					}
+				],
+				"points": 0,
+				"models": 0,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1000,
+						"key": "Splitter"
+					},
+				"sortPriority": 3,
+				"keywords": [],
+				"specialText": "Splitter, Stop Looking",
+				"equipment": []
+			},
+			{
+				"name": "-------------------------------------------",
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon" }]
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon" }]		
+					}
+				],
+				"points": 0,
+				"models": 0,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1000,
+						"key": "Splitter"
+					},
+				"sortPriority": 4,
+				"keywords": [],
+				"specialText": "Splitter, Stop Looking",
+				"equipment": []
+			},
+			{
+				"name": "--------------------------------------------",
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon" }]
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon" }]		
+					}
+				],
+				"points": 0,
+				"models": 0,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1000,
+						"key": "Splitter"
+					},
+				"sortPriority": 5,
+				"keywords": [],
+				"specialText": "Splitter, Stop Looking",
+				"equipment": []
+			},
+			{
+				"name": "---------------------------------------------",
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon" }]
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon" }]		
+					}
+				],
+				"points": 0,
+				"models": 0,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1000,
+						"key": "Splitter"
+					},
+				"sortPriority": 6,
+				"keywords": [],
+				"specialText": "Splitter, Stop Looking",
+				"equipment": []
+			},
+			{
+				"name": "----------------------------------------------",
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon" }]
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon" }]		
+					}
+				],
+				"points": 0,
+				"models": 0,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1000,
+						"key": "Splitter"
+					},
+				"sortPriority": 7,
+				"keywords": [],
+				"specialText": "Splitter, Stop Looking",
+				"equipment": []
+			},
+			{
 				"name": "Major",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -346,6 +487,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -434,6 +578,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -522,6 +669,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -672,6 +822,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -686,6 +839,11 @@
 				],
 				"options": [
 					{
+						"name": "Inexperienced",
+						"points": 16,
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Regular",
 						"points": 25,
 						"requireChooseOneKey": "morale"
@@ -694,6 +852,14 @@
 						"name": "Veteran",
 						"points": 30,
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
 					},
 					{
 						"name": "Additional Men",
@@ -739,6 +905,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -814,6 +983,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -907,6 +1079,14 @@
 						"name": "Inexperienced",
 						"points": 0,
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 4,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
 					}
 				],
 				"keywords": [],
@@ -1454,6 +1634,435 @@
 				"equipment": ["Rifles"]
 			},
 			{
+				"name": "Conscript Squad (Conscription)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 12,
+				"sortPriority": 3,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Levy",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 4,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					}
+				],
+				"keywords": ["Green","Shirkers"],
+				"specialText": "Infantry Unit;\n 1 NCO\n 11 Soldiers",
+				"equipment": []
+			},
+			{
+				"name": "Conscript Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 27,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 4,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					}
+				],
+				"keywords": ["Green","Shirkers"],
+				"specialText": "Rifle Team;\n 1 NCO\n 6 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Green Infantry Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Green"],
+				"specialText": "Rifle Team;\n 1 NCO\n 5 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Infantry Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 5 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Partisan Cell",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 27,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "NCO Pistol",
+						"points": -3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": -3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Fieldcraft","Forward Position","Infiltration"],
+				"specialText": "Rifle Team;\n 1 Cell Leader\n 2 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Engineer Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Flamethrower",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Light Demo Charges",
+						"points": 3,
+						"perModel": true,
+						"unavailableWithLocal": ["Heavy Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Heavy Demo Charges",
+						"points": 5,
+						"perModel": true,
+						"unavailableWithLocal": ["Light Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "ROK Marine Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
 				"name": "MMG Team",
 				"factions": [],
 				"order": 1,
@@ -1670,6 +2279,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -1827,6 +2439,82 @@
 				"keywords": [],
 				"specialText": "Mortar Team;\n 1 Mortar Operator\n 3 Assistants",
 				"equipment": ["Heavy Mortar Team"]
+			},
+			{
+				"name": "LMG Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 4,
+				"unlockKey": "LMG",
+				"limits": [
+					{
+						"key": "MG Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 59,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "MG Team;\n 1 Gunner\n 1 Assistants",
+				"equipment": ["LMG Team"]
+			},
+			{
+				"name": "LMG Team - Special Selection",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 4,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1,
+						"key": "LMG"
+					},
+				"limits": [
+					{
+						"key": "Bonus LMG Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 59,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "MG Team;\n 1 Gunner\n 1 Assistants",
+				"equipment": ["LMG Team"]
 			},
 			{
 				"name": "Light Howitzer",
