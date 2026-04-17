@@ -156,8 +156,8 @@
 				"additionalRules": ["Tae Guk Gi - If the enemy force includes KPA Units, all your Infantry and Artillery Units gain Fanatic; Bolt Action Korea Rules Book, Pg. 97","Conscription - May include a free Conscript Rifle Squad; Bolt Action Korea Rules Book, Pg. 97","Defensive Posture - In missions that have an Attacker/Defender, there is a reroll if ROK is not Defender. If ROK is Defender, gain the following:\n • First turn, opponent cannot issue Run orders.\n • Reroll for Artillery or Smoke barrage once.\n • Any ROK units that are Hidden may start with an Ambush.\n • Gain access to D3 emplacements after determining table edges.\n Bolt Action Korea Rules Book, Pg. 97"]
 			},
 			{
-				"name": "USA / UN",
-				"additionalRules": ["",""]
+				"name": "United States of America",
+				"additionalRules": ["Helicopters - Forward Observers can gain either Reconnaissance, Aerial Observation, or Medevac; Bolt Action Korea Rules Book, Pg. 115","Fire and Manuever - US Infantry Units do not suffer the -1 to hit; Bolt Action Korea Rules Book, Pg. 115","Gyro-Stabilisers - Veteran Tanks do not suffer -1 to hit; Bolt Action Korea Rules Book, Pg. 115", "Air Superiority - Forward Air Observers can call in an Air Strike Twice per game; Bolt Action Korea Rules Book, Pg. 115","Modern Communications - When moving from Reserve to table, do not suffer -1 to Order Test; Bolt Action Korea Rules Book, Pg. 115", "KATUSA Recruits Language Barrier - Units with KATUSA Recuirts start the game with a pin for each KATUSA Recruit the squad contains; Bolt Action Korea Rules Book, Pg. 115"]
 			}
 		],
 		"equipment": [],
@@ -192,7 +192,7 @@
 						"name": "Republic of Korea"
 					},
 					{
-						"name": "USA / UN"
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -217,7 +217,7 @@
 						"name": "Republic of Korea"
 					},
 					{
-						"name": "USA / UN"
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -243,7 +243,7 @@
 						"name": "Republic of Korea"
 					},
 					{
-						"name": "USA / UN"
+						"name": "United States of America"
 					}
 				],
 				"points": 0,
@@ -399,6 +399,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -490,6 +493,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -581,6 +587,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -672,6 +681,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -812,7 +824,69 @@
 					}
 				],
 				"keywords": ["Not One Step Back!"],
-				"specialText": "Commissar Unit;\n 1 Officer\n 2 Soldiers",
+				"specialText": "Commissar Unit;\n 1 Officer",
+				"equipment": []
+			},
+			{
+				"name": "Seasoned NCO",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "VetNCO",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifles",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					}
+				],
+				"keywords": ["Seasoned NCO"],
+				"specialText": "Seasoned NCO Unit;\n 1 Officer",
 				"equipment": []
 			},
 			{
@@ -825,6 +899,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -839,18 +916,46 @@
 				],
 				"options": [
 					{
-						"name": "Inexperienced",
-						"points": 16,
-						"requireChooseOneKey": "morale"
-					},
-					{
 						"name": "Regular",
-						"points": 25,
+						"points": 23,
+						"availableIn":[
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 30,
+						"availableIn":[
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Inexperienced",
+						"points": 16,
+						"availableIn":[
+							"North Korean People's Army",
+							"Republic of Korea"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 25,
+						"availableIn":[
+							"North Korean People's Army",
+							"Republic of Korea"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 30,
+						"availableIn":[
+							"North Korean People's Army",
+							"Republic of Korea"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -908,6 +1013,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -923,12 +1031,36 @@
 				"options": [
 					{
 						"name": "Regular",
+						"points": 75,
+						"availableIn":[
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"availableIn":[
+							"United States of America"
+						],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
 						"points": 100,
+						"availableIn":[
+							"North Korean People's Army",
+							"Republic of Korea"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"points": 115,
+						"availableIn":[
+							"North Korean People's Army",
+							"Republic of Korea"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -970,6 +1102,33 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"max": "parentModels",
 						"maxKey": "gun"
+					},
+					{
+						"name": "Helicopter - Reconnaissance",
+						"points": 30,
+						"limit": 1,
+						"availableIn":[
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Helicopter - Aerial Observation",
+						"points": 40,
+						"limit": 1,
+						"availableIn":[
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Helicopter - Medevac",
+						"points": 20,
+						"limit": 1,
+						"availableIn":[
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
 				"keywords": [],
@@ -986,6 +1145,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -1048,6 +1210,33 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"max": "parentModels",
 						"maxKey": "gun"
+					},
+					{
+						"name": "Helicopter - Reconnaissance",
+						"points": 30,
+						"limit": 1,
+						"availableIn":[
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Helicopter - Aerial Observation",
+						"points": 40,
+						"limit": 1,
+						"availableIn":[
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Helicopter - Medevac",
+						"points": 20,
+						"limit": 1,
+						"availableIn":[
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
 				"keywords": [],
@@ -2063,6 +2252,842 @@
 				"equipment": ["Rifles"]
 			},
 			{
+				"name": "Infantry Squad (Early)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 42,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 5 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Infantry Squad (Late)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 5 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Engineer Squad (Early)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Light Demo Charges",
+						"points": 3,
+						"perModel": true,
+						"unavailableWithLocal": ["Heavy Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Heavy Demo Charges",
+						"points": 5,
+						"perModel": true,
+						"unavailableWithLocal": ["Light Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 5 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Engineer Squad (Late)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Light Demo Charges",
+						"points": 3,
+						"perModel": true,
+						"unavailableWithLocal": ["Heavy Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Heavy Demo Charges",
+						"points": 5,
+						"perModel": true,
+						"unavailableWithLocal": ["Light Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Airborne Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Stubborn"],
+				"specialText": "Rifle Team;\n 1 NCO\n 5 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Ranger Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Tough Fighters","Rangers Lead the Way!"],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Raider Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Raiders Lead the Way!","Tough Fighters"],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "USMC Squad (Early)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"unlockKey": "Dog",
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "USMC Squad (MID/Late)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"unlockKey": "Dog",
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 81,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Shotguns",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "BAR M1918A2",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "Pistols",
+						"points": 1,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 3
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Flak Jackets",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 6 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "USMC War Dog Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 3,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1,
+						"key": "Dog"
+					},
+				"limits": [
+					{
+						"key": "Dog Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 18,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "Rifle",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					}
+				],
+				"keywords": ["Tough Fighters","Spotting"],
+				"specialText": "War Dog Team;\n 1 Dog Handler\n",
+				"equipment": []
+			},
+			{
 				"name": "MMG Team",
 				"factions": [],
 				"order": 1,
@@ -2072,6 +3097,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2103,6 +3131,10 @@
 					{
 						"name": "Gun Shield",
 						"points": 5,
+						"availableIn":[
+							"North Korean People's Army",
+							"Republic of Korea"
+						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
@@ -2196,6 +3228,50 @@
 				"equipment": ["Sniper","Spotter Pistol"]
 			},
 			{
+				"name": "Sniper Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Sniper Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "SMGs",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					}
+				],
+				"keywords": [],
+				"specialText": "Sniper Team;\n 1 Sniper\n 1 Spotter",
+				"equipment": ["Sniper","Spotter Pistol"]
+			},
+			{
 				"name": "AT Team",
 				"factions": [],
 				"order": 1,
@@ -2245,6 +3321,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2278,7 +3357,8 @@
 						"points": 20,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Republic of Korea"
+							"Republic of Korea",
+							"United States of America"
 						]
 					}
 				],
@@ -2296,6 +3376,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2368,6 +3451,76 @@
 				"equipment": ["Light Mortar Team"]
 			},
 			{
+				"name": "Light Mortar Team (US Army)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Mortar Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 28,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 52,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Mortar Team;\n 1 Mortar Operator\n 2 Assistant",
+				"equipment": ["Light Mortar Team"]
+			},
+			{
+				"name": "Light Mortar Team (US Airborne)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Mortar Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 46,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Mortar Team;\n 1 Mortar Operator\n 1 Assistant",
+				"equipment": ["Light Mortar Team"]
+			},
+			{
 				"name": "Medium Mortar Team",
 				"factions": [],
 				"order": 1,
@@ -2377,6 +3530,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2425,6 +3581,9 @@
 					},
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2470,6 +3629,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2484,6 +3646,12 @@
 					}
 				],
 				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 34,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
 					{
 						"name": "Regular",
 						"points": 45,
@@ -2506,6 +3674,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -2524,6 +3695,12 @@
 					}
 				],
 				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 34,
+						"availableIn": ["United States of America"],
+						"requireChooseOneKey": "morale"
+					},
 					{
 						"name": "Regular",
 						"points": 45,
@@ -2546,6 +3723,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -3217,6 +4397,7 @@
 					{
 						"name": "Spotter",
 						"points": 10,
+						"addsModels": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					},
 					{
@@ -3383,6 +4564,448 @@
 				"keywords": [],
 				"specialText": "Field Gun Team;\n 3 Gun Operators",
 				"equipment": ["Medium AT Gun","Gun Shield"]
+			},
+			{
+				"name": "75mm M1 A1 Light Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 54,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer"]
+			},
+			{
+				"name": "105mm M2 A1 Medium Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 56,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "HEAT Rounds - 105mm",
+						"points": 15,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Gun Shield",
+						"points": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 4 Gun Operators",
+				"equipment": ["Medium Howitzer"]
+			},
+			{
+				"name": "155mm M2/M114 Heavy Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "KATUSA Recruits",
+						"points": 0,
+						"increment": true,
+						"max": 1,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Gun Shield",
+						"points": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 4 Gun Operators",
+				"equipment": ["Heavy Howitzer"]
+			},
+			{
+				"name": "203mm M115 Heavy Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 5 Gun Operators",
+				"equipment": ["Heavy Howitzer"]
+			},
+			{
+				"name": "57mm M18 Recoilless Artillery",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 30,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer"]
+			},
+			{
+				"name": "75mm M20 Recoilless Artillery",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 54,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium Howitzer"]
+			},
+			{
+				"name": "M16 Rocket Launcher",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 52,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 78,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Multiple Launcher"],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Heavy Mortar"]
+			},
+			{
+				"name": "57mm M1 Medium AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Gun Shield"],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium AT Gun Team"]
+			},
+			{
+				"name": "3in M5 Heavy AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Gun Shield"],
+				"specialText": "Field Gun Team;\n 4 Gun Operators",
+				"equipment": ["Heavy AT Gun Team"]
+			},
+			{
+				"name": "90mm M2 Super Heavy AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 148,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 185,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 222,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Gun Shield","Flak"],
+				"specialText": "Field Gun Team;\n 5 Gun Operators",
+				"equipment": ["Super Heavy AT Gun Team"]
 			},
 			{
 				"name": "T-34/85 Medium Tank",
@@ -3705,12 +5328,15 @@
 				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Rear Facing MMG","Hull Mounted MMG"]
 			},
 			{
-				"name": "M24 'Chafee' Light Tank",
+				"name": "M24 'Chaffee' Light Tank",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -3748,6 +5374,13 @@
 						"name": "Recce",
 						"points": 10,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Improved HE",
+						"points": 0,
+						"availableIn":["United States of America"],
+						"requireChooseOneKey": "HE",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
 				"keywords": ["Vulnerable"],
@@ -3761,6 +5394,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -3812,6 +5448,20 @@
 						"points": 10,
 						"requireChooseOneKey": "fire",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Improved HE",
+						"points": 0,
+						"availableIn":["United States of America"],
+						"requireChooseOneKey": "HE",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Gyrostabiliser",
+						"points": 0,
+						"availableIn":["United States of America"],
+						"requireChooseOneKey": "GS",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
 				"keywords": [],
@@ -3825,6 +5475,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -3841,6 +5494,65 @@
 					{
 						"name": "Inexperienced",
 						"points": 188,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 235,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 282,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Gyrostabiliser",
+						"points": 0,
+						"availableIn":["United States of America"],
+						"requireChooseOneKey": "GS",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 9+",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "105mm M4 A3 'Sherman' Medium Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 164,
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -3868,7 +5580,7 @@
 				],
 				"keywords": [],
 				"specialText": "Tracked Tank;\n Damage Value: 9+",
-				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+				"equipment": ["Turret Mounted Medium Howitzer","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
 			},
 			{
 				"name": "M46 'Patton' Heavy Tank",
@@ -3877,6 +5589,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -3902,7 +5617,104 @@
 					},
 					{
 						"name": "Veteran",
-						"points": 474,
+						"points": 484,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Gyrostabiliser",
+						"points": 0,
+						"availableIn":["United States of America"],
+						"requireChooseOneKey": "GS",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "M26 'Pershing' Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 316,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 395,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 484,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Gyrostabiliser"],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "M45 (T26E2) Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 220,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 275,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 330,
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -3913,7 +5725,57 @@
 				],
 				"keywords": [],
 				"specialText": "Tracked Tank;\n Damage Value: 10+",
-				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+				"equipment": ["Turret Mounted Medium Howitzer","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "M18 'Hellcat' Tank Destroyer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 124,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 155,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 186,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Recce",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Open Topped"],
+				"specialText": "Tracked Tank;\n Damage Value: 7+",
+				"equipment": ["Turret Mounted Heavy AT Gun"]
 			},
 			{
 				"name": "M36 B1 'Jackson' Tank Destroyer",
@@ -3922,6 +5784,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -3967,6 +5832,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -4012,6 +5880,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -4058,12 +5929,67 @@
 				"equipment": []
 			},
 			{
+				"name": "M8 'Greyhound' Scout Car",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"chooseOneKey": "secWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pintle Mounted Flamethrower",
+						"points": 50,
+						"chooseOneKey": "secWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Recce","Open Topped"],
+				"specialText": "Wheeled Armored Car;\n Damage Value: 7+",
+				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
 				"name": "Jeep w/ MMG",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -4096,6 +6022,306 @@
 				"keywords": [],
 				"specialText": "Wheeled Car;\n Damage Value: 6+",
 				"equipment": ["Pintle Mounted MMG"]
+			},
+			{
+				"name": "LVT (A) 1 Alligator",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 120,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 150,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 180,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted Light AT Gun & Coaxial MMG",
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Flamethrower",
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Amphibious"],
+				"specialText": "Tracked Vehicle;\n Damage Value: 7+",
+				"equipment": ["Pintle Mounted MMG","x2"]
+			},
+			{
+				"name": "M7 'Priest' SPG",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 128,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 192,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Open Topped"],
+				"specialText": "Tracked Vehicle;\n Damage Value: 8+",
+				"equipment": ["Hull Mounted Medium Howitzer","Pintle Mounted MMG"]
+			},
+			{
+				"name": "LVT (A) 4 Landing Vehicle",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 100,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 125,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 150,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Amphibious","Open Topped"],
+				"specialText": "Tracked Vehicle;\n Damage Value: 7+",
+				"equipment": ["Turret Mounted Light Howitzer","Pintle Mounted MMG"]
+			},
+			{
+				"name": "M40 GMC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 165,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 198,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Open Topped","Vulnerable"],
+				"specialText": "Tracked Vehicle;\n Damage Value: 8+",
+				"equipment": ["Hull Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "M41 GMC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 175,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 210,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Open Topped"],
+				"specialText": "Tracked Vehicle;\n Damage Value: 8+",
+				"equipment": ["Hull Mounted Heavy Howitzer"]
+			},
+			{
+				"name": "M16 'Meatchopper' MGMC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 100,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 125,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 150,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Rear Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal":["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Open Topped","Flak"],
+				"specialText": "Half Track Vehicle;\n Damage Value: 7+",
+				"equipment": ["Quad Turret Mounted HMGs"]
+			},
+			{
+				"name": "M19 MGMC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Rear Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal":["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Open Topped","Flak","Vulnerable"],
+				"specialText": "Half Track Vehicle;\n Damage Value: 7+",
+				"equipment": ["Twin Turret Mounted Heavy Autocannons"]
 			},
 			{
 				"name": "Gaz 'Jeep' Transport",
@@ -4368,6 +6594,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -4449,6 +6678,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -4491,12 +6723,15 @@
 				"equipment": ["Pintle Mounted MMG"]
 			},
 			{
-				"name": "2 1/2 Tun Truck Transport",
+				"name": "2 1/2 Ton Truck Transport",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -4527,6 +6762,416 @@
 				"keywords": ["Transport","Tow"],
 				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
 				"equipment": []
+			},
+			{
+				"name": "M75 APC",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 68,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 85,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 102,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow","Slow"],
+				"specialText": "Tracked Transport;\n Damage Value: 7+\n Transport: 10\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "M39 (T41) AUV",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 69,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 86,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 103,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Rear Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Tow","Slow"],
+				"specialText": "Tracked Transport;\n Damage Value: 7+\n Transport: 10\n Tow: Any",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "3/4 Ton Dodge Truck Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 31,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 37,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 8\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "1 1/2 Ton Dodge Truck Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 31,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 39,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 47,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "M29 'Weasel' Tracked Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 12,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 15,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow","Slow","Open Topped","Amphibious","Low Ground Pressure"],
+				"specialText": "Tracked Transport;\n Damage Value: 6+\n Transport: 3\n Tow: L AT Gun",
+				"equipment": []
+			},
+			{
+				"name": "M4/M5 Artillery Tractor",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 12,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 15,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Tow: Any",
+				"equipment": []
+			},
+			{
+				"name": "DUKW 'Duck' Amphibious Truck Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 35,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 44,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 53,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Tow","Amphibious","Open Topped"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 12\n Tow: L/M AT Gun, L/M Howitzer, L AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "LVT3C 'Bushmaster' Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 98,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 123,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 148,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Open Topped","Amphibious"],
+				"specialText": "Tracked Transport;\n Damage Value: 6+\n Transport: 24 Solders or a Jeep or an Artillery Unit",
+				"equipment": ["Pintle Mounted MMG","x2"]
+			},
+			{
+				"name": "LVT4 'Water Buffalo' Amphibious Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 112,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 168,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Open Topped","Amphibious"],
+				"specialText": "Tracked Transport;\n Damage Value: 7+\n Transport: 30 Solders or a Jeep or an Artillery Unit",
+				"equipment": ["Pintle Mounted MMG","x2"]
+			},
+			{
+				"name": "LVT(A)2 Armored Amphibious Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 93,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 116,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 139,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Transport","Open Topped","Amphibious"],
+				"specialText": "Tracked Transport;\n Damage Value: 6+\n Transport: 18",
+				"equipment": ["Pintle Mounted MMG","x2"]
 			}
 		]
 	}
