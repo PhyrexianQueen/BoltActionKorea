@@ -2069,6 +2069,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -2239,6 +2242,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -2266,6 +2272,14 @@
 						"name": "Veteran",
 						"points": 78,
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Super Bazooka Upgrade",
+						"points": 20,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Republic of Korea"
+						]
 					}
 				],
 				"keywords": [],
@@ -2317,6 +2331,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -2357,6 +2374,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -2402,6 +2422,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
 				"points": 0,
@@ -2515,6 +2538,46 @@
 				"keywords": [],
 				"specialText": "MG Team;\n 1 Gunner\n 1 Assistants",
 				"equipment": ["LMG Team"]
+			},
+			{
+				"name": "HMG Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "MG Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 49,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 91,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "MG Team;\n 1 Gunner\n 3 Assistants",
+				"equipment": ["HMG Team"]
 			},
 			{
 				"name": "Light Howitzer",
@@ -3072,6 +3135,256 @@
 				"equipment": ["Heavy AT Gun Team","Gun Shield"]
 			},
 			{
+				"name": "M3 Medium Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 56,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 4 Gun Operators",
+				"equipment": ["Medium Howitzer"]
+			},
+			{
+				"name": "M2A1 Medium Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 56,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "HEAT Rounds",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Gun Shield",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 4 Gun Operators",
+				"equipment": ["Medium Howitzer"]
+			},
+			{
+				"name": "57mm M18 Recoilless Artillery",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 30,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer"]
+			},
+			{
+				"name": "75mm M20 Recoilless Artillery",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 54,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium Howitzer"]
+			},
+			{
+				"name": "37mm M3 Light AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light AT Gun"]
+			},
+			{
+				"name": "57mm M1 Medium AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium AT Gun","Gun Shield"]
+			},
+			{
 				"name": "T-34/85 Medium Tank",
 				"factions": [],
 				"order": 1,
@@ -3125,7 +3438,7 @@
 				"sortPriority": 6,
 				"limits": [
 					{
-						"key": "SPG",
+						"key": "Tonk",
 						"limit": 1,
 						"perParent": true
 					}
@@ -3170,7 +3483,7 @@
 				"sortPriority": 6,
 				"limits": [
 					{
-						"key": "SPG",
+						"key": "Tonk",
 						"limit": 1,
 						"perParent": true
 					}
@@ -3357,6 +3670,434 @@
 				"equipment": ["Twin Turret Mounted HMG"]
 			},
 			{
+				"name": "Captured Type 95 Ha-Go Tankette",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 72,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["One Man Turret","Low Velocity Light AT Gun"],
+				"specialText": "Tracked Tank;\n Damage Value: 7+",
+				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Rear Facing MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "M24 'Chafee' Light Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 180,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Recce",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Vulnerable"],
+				"specialText": "Tracked Tank;\n Damage Value: 8+",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "75mm M4 A3 'Sherman' Medium Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 164,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 205,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 246,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Easily Catches Fire",
+						"points": 0,
+						"requireChooseOneKey": "fire",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Cancel Easily Catches Fire",
+						"points": 10,
+						"requireChooseOneKey": "fire",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 9+",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "76mm M4 A3 'Sherman' Medium Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 188,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 205,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 246,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 15,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 9+",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "M46 'Patton' Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 316,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 395,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 474,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "M36 B1 'Jackson' Tank Destroyer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 204,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 255,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 306,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Open Topped"],
+				"specialText": "Tracked Tank;\n Damage Value: 8+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun"]
+			},
+			{
+				"name": "M36 B2 'Jackson' Tank Destroyer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 209,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 260,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 311,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 8+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun"]
+			},
+			{
+				"name": "M20 Scout Car",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 64,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 0,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Pintle Mounted Flamethrower",
+						"points": 0,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Recce","Open Topped"],
+				"specialText": "Wheeled Armored Car;\n Damage Value: 7+",
+				"equipment": []
+			},
+			{
+				"name": "Jeep w/ MMG",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 32,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Wheeled Car;\n Damage Value: 6+",
+				"equipment": ["Pintle Mounted MMG"]
+			},
+			{
 				"name": "Gaz 'Jeep' Transport",
 				"factions": [],
 				"order": 1,
@@ -3368,13 +4109,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Trans",
-						"limit": 1,
-						"perParent": true
-					}
-				],
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -3420,13 +4154,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Trans",
-						"limit": 1,
-						"perParent": true
-					}
-				],
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -3475,13 +4202,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Trans",
-						"limit": 1,
-						"perParent": true
-					}
-				],
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -3530,13 +4250,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Trans",
-						"limit": 1,
-						"perParent": true
-					}
-				],
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -3582,13 +4295,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Trans",
-						"limit": 1,
-						"perParent": true
-					}
-				],
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -3622,13 +4328,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Trans",
-						"limit": 1,
-						"perParent": true
-					}
-				],
 				"options": [
 					{
 						"name": "Inexperienced",
@@ -3660,6 +4359,173 @@
 				],
 				"keywords": ["Tow"],
 				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Tow: L/M AT Gun, L Howitzer, L/M AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "Jeep Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 17,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 21,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 25,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 3\n Tow: L AT Gun",
+				"equipment": []
+			},
+			{
+				"name": "M3 Half-Track Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 79,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 99,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 119,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Left Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Right Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Rear Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Half Track Transport;\n Damage Value:6+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
+				"equipment": ["Pintle Mounted MMG"]
+			},
+			{
+				"name": "M3 Half-Track Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 79,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 99,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 119,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Left Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Right Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Rear Facing Pintle Mounted MMG",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Half Track Transport;\n Damage Value: 7+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
+				"equipment": ["Pintle Mounted MMG"]
+			},
+			{
+				"name": "2 1/2 Tun Truck Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 41,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 51,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 61,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
 				"equipment": []
 			}
 		]
