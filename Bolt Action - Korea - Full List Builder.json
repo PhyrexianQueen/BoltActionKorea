@@ -141,11 +141,11 @@
 		"factions": [
 			{
 				"name": "British Commonwealth",
-				"additionalRules": ["",""]
+				"additionalRules": ["Bombardment - When rolling for Preparatory Bombardment, roll 2 Dice instead of 1; Bolt Action Korea Rules Book, Pg. 144","Artillery Support - Gain Access a Second, Free, Regular Forward Artillery Observer; Bolt Action Korea Rules Book, Pg. 144","A National Characteristic - Gain Access to one of the following:\n • Up and at 'em - Any Run Order on a Regular or Veteran to Assault it automatically successful.\n • Blood Curdling Charge - Enemy units cannot react to an Assault by shooting at them if the unit is Regular or Veteran.\n • Tough as Boots - Regular or Veteran Infantry Units roll bonus attack dice when in Close Quarters.\n • Rapid Fire - All Regular and Veteran Infantry units with rifles roll bonus attack dice when shooting.\n • Vengeance - Regular and Veteran Units can make a test to lose one pin marker if an enemy is within 12in.\n Bolt Action Korea Rules Book, Pg. 144-145"]
 			},
 			{
 				"name": "Chinese People's Volunteer Army",
-				"additionalRules": ["",""]
+				"additionalRules": ["Conscript Levy - Gain access to a free Conscript Rifle Squad; Bolt Action Korea Rules Book, Pg. 166","Sparrow Tactics - Regular and Veteran Infantry may make a move of 8in after both sides have finished setup, before first turn; Bolt Action Korea Rules Book, Pg. 166","Flag - A unit can equip a flag to gain Rally to the Colors; Bolt Action Korea Rules Book, Pg. 166","Short Attack - When an Officer uses 'You men Snap to', they can only select infatry units and are limited to one extra dice; Bolt Action Korea Rules Book, Pg. 166"]
 			},
 			{
 				"name": "North Korean People's Army",
@@ -164,9 +164,35 @@
 		"keywords": [],
 		"platoons": [
 			{
+				"name": "British Reinforced Platoon",
+				"unlimited": true,
+				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Sections: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "British Commonwealth"
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
+				"name": "Chinese Reinforced Platoon",
+				"unlimited": true,
+				"specialText": "Communist Captain/Major: 0-1\n Communist Officer: 1\n Political Officer: 0-1\n Forward Artillery Observer: 0-1\n Medic: 0-1\n Infantry Sections: 2-9\n Infiltration Squad: 0-2\n Cavalry Squad: 0-1\n Scout Team: 0-2\n Sniper Team: 0-1\n MG Team: 0-1\n HMG Team: 0-2\n Mortar Team: 0-1\n Heavy Mortar Team: 0-2\n Flamethrower Team: 0-1\n AT Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
+				"decreaseModelCount": 1,
+				"factions": [
+					{
+						"name": "Chinese People's Volunteer Army"
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
 				"name": "North Korean Reinforced Platoon",
 				"unlimited": true,
-				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Secionts: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Bazooka Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
+				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Sections: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Bazooka Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
 				"decreaseModelCount": 1,
 				"factions": [
 					{
@@ -179,15 +205,9 @@
 			{
 				"name": "Reinforced Platoon",
 				"unlimited": true,
-				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Secionts: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
+				"specialText": "Captain/Major: 0-1\n 1st/2nd Lieutenant: 1\n Veteran NCO: 0-1\n Forward Observer: 0-1\n Medic: 0-1\n Infantry Sections: 2-5\n Sniper Team: 0-1\n MG Team: 0-1\n Mortar Team: 0-1\n Flamethrower Team: 0-1\n AT Team: 0-1\n Field Artillery or AT Gun: 0-1\n Armored Car: 0-1\n Tank/TD/SPG: 0-1\n Transport: 0-1",
 				"decreaseModelCount": 1,
 				"factions": [
-					{
-						"name": "British Commonwealth"
-					},
-					{
-						"name": "Chinese People's Volunteer Army"
-					},
 					{
 						"name": "Republic of Korea"
 					},
@@ -256,6 +276,12 @@
 				"factions": [],
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon" }]
 					},
 					{
@@ -278,6 +304,12 @@
 				"name": "------------------------------------------",
 				"factions": [],
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon" }]
 					},
@@ -302,6 +334,12 @@
 				"factions": [],
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon" }]
 					},
 					{
@@ -324,6 +362,12 @@
 				"name": "--------------------------------------------",
 				"factions": [],
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon" }]
 					},
@@ -348,6 +392,12 @@
 				"factions": [],
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon" }]
 					},
 					{
@@ -370,6 +420,12 @@
 				"name": "----------------------------------------------",
 				"factions": [],
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon" }]
 					},
@@ -394,6 +450,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -489,6 +548,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -583,6 +645,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -676,6 +741,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -833,6 +901,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -886,7 +957,7 @@
 					}
 				],
 				"keywords": ["Seasoned NCO"],
-				"specialText": "Seasoned NCO Unit;\n 1 Officer",
+				"specialText": "Seasoned NCO Unit;\n 1 NCO",
 				"equipment": []
 			},
 			{
@@ -894,6 +965,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -919,6 +993,7 @@
 						"name": "Regular",
 						"points": 23,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -927,6 +1002,7 @@
 						"name": "Veteran",
 						"points": 30,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"requireChooseOneKey": "morale"
@@ -1008,6 +1084,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -1108,6 +1187,7 @@
 						"points": 30,
 						"limit": 1,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
@@ -1117,6 +1197,7 @@
 						"points": 40,
 						"limit": 1,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
@@ -1126,6 +1207,7 @@
 						"points": 20,
 						"limit": 1,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
@@ -1141,6 +1223,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -1153,6 +1238,7 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 2,
+				"unlockKey": "britFAO",
 				"limits": [
 					{
 						"key": "FAO",
@@ -1216,6 +1302,7 @@
 						"points": 30,
 						"limit": 1,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
@@ -1225,6 +1312,7 @@
 						"points": 40,
 						"limit": 1,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
@@ -1234,6 +1322,7 @@
 						"points": 20,
 						"limit": 1,
 						"availableIn":[
+							"British Commonwealth",
 							"United States of America"
 						],
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
@@ -1242,6 +1331,342 @@
 				"keywords": [],
 				"specialText": "Forward Observer Unit;\n 1 FAO",
 				"equipment": []
+			},
+			{
+				"name": "Forward Artillery Observer - Special Selection",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 2,
+				"unlockedByLocal":
+					{
+						"quantityRequired":1,
+						"key": "britFAO"
+					},
+				"limits": [
+					{
+						"key": "britFAO",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 0,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifle",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Helicopter - Reconnaissance",
+						"points": 30,
+						"limit": 1,
+						"availableIn":[
+							"British Commonwealth",
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Helicopter - Aerial Observation",
+						"points": 40,
+						"limit": 1,
+						"availableIn":[
+							"British Commonwealth",
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Helicopter - Medevac",
+						"points": 20,
+						"limit": 1,
+						"availableIn":[
+							"British Commonwealth",
+							"United States of America"
+						],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Forward Observer Unit;\n 1 FAO",
+				"equipment": []
+			},
+			{
+				"name": "Infantry Section (Early)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Infantry Section (Late)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Royal Marine Commando Seciton",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Vickers K LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Behind Enemy Lines","Tough Fighters"],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
 			},
 			{
 				"name": "Conscript Squad (Conscript Levy)",
@@ -3093,6 +3518,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -3233,6 +3661,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -3367,10 +3798,58 @@
 				"equipment": ["Bazooka Team"]
 			},
 			{
+				"name": "PIAT AT Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Bazooka Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 28,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 52,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Super Bazooka Upgrade",
+						"points": 20,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "PIAT Team;\n 1 PIAT Operator\n 1 Spotter",
+				"equipment": ["PIAT Team"]
+			},
+			{
 				"name": "Flamethrower Team",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -3412,6 +3891,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -3526,6 +4008,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -3576,6 +4061,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
@@ -3760,6 +4248,250 @@
 				"equipment": ["HMG Team"]
 			},
 			{
+				"name": "25pdr Light Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 55,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 66,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["25pdr AT Shell"],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer","Gun Shield"]
+			},
+			{
+				"name": "114mm/140mm Medium Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium Howitzer","Gun Shield"]
+			},
+			{
+				"name": "182.9mm/155mm Heavy Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 115,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 138,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 5 Gun Operators",
+				"equipment": ["Heavy Howitzer","Gun Shield"]
+			},
+			{
+				"name": "40mm Bofors AA Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 48,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 72,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Flak"],
+				"specialText": "Field Gun Team;\n 4 Gun Operators",
+				"equipment": ["Heavy Autocannon"]
+			},
+			{
+				"name": "6pdr QF AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium AT Gun","Gun Shield"]
+			},
+			{
+				"name": "17pdr QF AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 168,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 5 Gun Operators",
+				"equipment": ["Medium AT Gun","Gun Shield"]
+			},
+			{
 				"name": "Light Howitzer",
 				"factions": [],
 				"order": 1,
@@ -3837,6 +4569,7 @@
 					{
 						"name": "Spotter",
 						"points": 10,
+						"addsModels": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
@@ -5006,6 +5739,602 @@
 				"keywords": ["Gun Shield","Flak"],
 				"specialText": "Field Gun Team;\n 5 Gun Operators",
 				"equipment": ["Super Heavy AT Gun Team"]
+			},
+			{
+				"name": "Cruiser MK.VIII 'Cromwell' Medium Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 164,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 205,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 246,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Improved HE"],
+				"specialText": "Tracked Tank;\n Damage Value: 9+",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "Cruiser MK.VIII CS 'Cromwell' Medium Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 164,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 205,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 246,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 9+",
+				"equipment": ["Turret Mounted Medium Howitzer","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "Cruiser 'Comet' Medium Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 355,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 426,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Extra Front Armor"],
+				"specialText": "Tracked Tank;\n Damage Value: 11+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "Wasp Carrier",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 78,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 102,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted LMG",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Open Topped"],
+				"specialText": "Tracked Vehicle;\n Damage Value: 7+",
+				"equipment": ["Hull Mounted LMG"]
+			},
+			{
+				"name": "MK.VII 'Churchill' Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 348,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 435,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 522,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Slow","Improved HE"],
+				"specialText": "Tracked Tank;\n Damage Value: 11+",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "MK.VIII 'Churchill' Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 318,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 405,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 492,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Slow"],
+				"specialText": "Tracked Tank;\n Damage Value: 11+",
+				"equipment": ["Turret Mounted Light Howitzer","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "MK.VII 'Churchill Crocodile' Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 388,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 475,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 562,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Slow","Improved HE"],
+				"specialText": "Tracked Tank;\n Damage Value: 11+",
+				"equipment": ["Turret Mounted Medium AT Gun","Turret Mounted Coaxial MMG","Hull Mounted Flamethrower"]
+			},
+			{
+				"name": "MK.III/IV 'Churchill' Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 290,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 348,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Slow","Petard Mortar"],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Turret Mounted Heavy Howitzer","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "Centurion Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 308,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 385,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 462,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "M10 'Achilles' Tank Destroyer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 204,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 255,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 306,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Open Topped"],
+				"specialText": "Tracked Tank;\n Damage Value: 8+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Turret Mounted Coaxial MMG"]
+			},
+			{
+				"name": "ACV-IP Armored Car",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Armored Car",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 48,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 72,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted LMG",
+						"points": 10,
+						"chooseOneKey": "secWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Hull Mounted LMG",
+						"points": 0,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Hull Mounted Boys AT Rifle",
+						"points": 10,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Recce","Open Topped"],
+				"specialText": "Wheeled Armored Car;\n Damage Value: 7+",
+				"equipment": []
+			},
+			{
+				"name": "Daimler Armored Car",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Armored Car",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 92,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 115,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 138,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Recce"],
+				"specialText": "Wheeled Armored Car;\n Damage Value: 7+",
+				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Coaxial LMG"]
+			},
+			{
+				"name": "Daimler Dingo Armored Car",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Armored Car",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 64,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Recce","Open Topped"],
+				"specialText": "Wheeled Armored Car;\n Damage Value: 8+",
+				"equipment": ["Hull Mounted LMG"]
+			},
+			{
+				"name": "Mk.I-III AEC Heavy Armored Car",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Armored Car",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 108,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 162,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Turret Mounted Light AT Gun",
+						"points": 0,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"points": 20,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"points": 30,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Recce","Improved HE"],
+				"specialText": "Wheeled Armored Car;\n Damage Value: 8+",
+				"equipment": ["Turret Mounted Coaxial MMG"]
 			},
 			{
 				"name": "T-34/85 Medium Tank",
@@ -6324,6 +7653,45 @@
 				"equipment": ["Twin Turret Mounted Heavy Autocannons"]
 			},
 			{
+				"name": "Brenn Carrier Tracked Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 48,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 72,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted LMG",
+						"points": 10,
+						"chooseOneKey": "priWeapon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Transport","Tow","Open Topped","Turn on the Spot"],
+				"specialText": "Tracked Transport;\n Damage Value: 7+\n Transport: 5\n Tow: L/M AT Gun",
+				"equipment": ["Hull Mounted LMG"]
+			},
+			{
 				"name": "Gaz 'Jeep' Transport",
 				"factions": [],
 				"order": 1,
@@ -6629,7 +7997,13 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
+					},
+					{
+						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -6670,98 +8044,6 @@
 				"keywords": ["Transport","Tow","Open Topped"],
 				"specialText": "Half Track Transport;\n Damage Value:6+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
 				"equipment": ["Pintle Mounted MMG"]
-			},
-			{
-				"name": "M3 Half-Track Transport",
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
-					},
-					{
-						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 1,
-				"sortPriority": 7,
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 79,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"points": 99,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 119,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Left Facing Pintle Mounted MMG",
-						"points": 15,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "Right Facing Pintle Mounted MMG",
-						"points": 15,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "Rear Facing Pintle Mounted MMG",
-						"points": 15,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					}
-				],
-				"keywords": ["Transport","Tow","Open Topped"],
-				"specialText": "Half Track Transport;\n Damage Value: 7+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
-				"equipment": ["Pintle Mounted MMG"]
-			},
-			{
-				"name": "2 1/2 Ton Truck Transport",
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
-					},
-					{
-						"all": [{ "in": "Reinforced Platoon"	}, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 1,
-				"sortPriority": 7,
-				"options": [
-					{
-						"name": "Inexperienced",
-						"points": 41,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"points": 51,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"points": 61,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Pintle Mounted MMG",
-						"points": 25,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					}
-				],
-				"keywords": ["Transport","Tow"],
-				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 12\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun",
-				"equipment": []
 			},
 			{
 				"name": "M75 APC",
