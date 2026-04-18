@@ -543,6 +543,102 @@
 				"equipment": []
 			},
 			{
+				"name": "Communist Major",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "CompCom",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 150,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 165,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifles",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Flag",
+						"points": 25,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					}
+				],
+				"keywords": [],
+				"specialText": "Headquarters Unit;\n 1 Officer",
+				"equipment": []
+			},
+			{
 				"name": "Captain",
 				"factions": [],
 				"order": 1,
@@ -629,6 +725,102 @@
 					{
 						"name": "Rifles",
 						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					}
+				],
+				"keywords": [],
+				"specialText": "Headquarters Unit;\n 1 Officer",
+				"equipment": []
+			},
+			{
+				"name": "Communist Captain",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "CompCom",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 125,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifles",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Flag",
+						"points": 25,
 						"increment": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"max": "parentModels",
@@ -737,6 +929,102 @@
 				"equipment": []
 			},
 			{
+				"name": "Communist 1st Lieutenant",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "CompCom",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifles",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Flag",
+						"points": 25,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					}
+				],
+				"keywords": [],
+				"specialText": "Headquarters Unit;\n 1 Officer",
+				"equipment": []
+			},
+			{
 				"name": "2nd Lieutenant",
 				"factions": [],
 				"order": 1,
@@ -834,6 +1122,102 @@
 				"equipment": []
 			},
 			{
+				"name": "Communist 2n Lieutenant",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "CompCom",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifles",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Flag",
+						"points": 25,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					}
+				],
+				"keywords": [],
+				"specialText": "Headquarters Unit;\n 1 Officer",
+				"equipment": []
+			},
+			{
 				"name": "Commissar",
 				"factions": [],
 				"order": 1,
@@ -848,6 +1232,68 @@
 				"limits": [
 					{
 						"key": "Commissar",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 15,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "SMGs",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Pistols",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Rifles",
+						"points": 0,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					}
+				],
+				"keywords": ["Not One Step Back!"],
+				"specialText": "Commissar Unit;\n 1 Officer",
+				"equipment": []
+			},
+			{
+				"name": "Political Officer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 1,
+				"limits": [
+					{
+						"key": "PO",
 						"limit": 1,
 						"perParent": true
 					}
@@ -969,6 +1415,9 @@
 						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -1020,6 +1469,7 @@
 						"name": "Regular",
 						"points": 25,
 						"availableIn":[
+							"Chinese People's Volunteer Army",
 							"North Korean People's Army",
 							"Republic of Korea"
 						],
@@ -1029,6 +1479,7 @@
 						"name": "Veteran",
 						"points": 30,
 						"availableIn":[
+							"Chinese People's Volunteer Army",
 							"North Korean People's Army",
 							"Republic of Korea"
 						],
@@ -1226,6 +1677,9 @@
 						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -1250,6 +1704,12 @@
 					{
 						"name": "Regular",
 						"points": 100,
+						"availableIn":[
+							"British Commonwealth",
+							"North Korean People's Army",
+							"Republic of Korea",
+							"United States of America"
+						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -1669,6 +2129,671 @@
 				"equipment": ["Rifles"]
 			},
 			{
+				"name": "Infantry Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Infantry Squad",
+						"limit": 9,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 7,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 7,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Chinese Conscript Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Infantry Squad",
+						"limit": 9,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 49,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Shirkers",
+						"points": -3,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Green"],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Conscript Squad (Chinese Conscript Levy)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 12,
+				"sortPriority": 3,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Levy",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Infantry Unit;\n 1 NCO\n 9 Soldiers",
+				"equipment": []
+			},
+			{
+				"name": "SMG Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Infantry Squad",
+						"limit": 9,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 17,
+						"increment": true,
+						"max": 4,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Fieldcraft"],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Grenadier Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Infantry Squad",
+						"limit": 9,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Fieldcraft"],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Grenades"]
+			},
+			{
+				"name": "Engineer Squad",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Infantry Squad",
+						"limit": 9,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Flamethrower",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Light Demo Charges",
+						"points": 3,
+						"perModel": true,
+						"unavailableWithLocal": ["Heavy Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Heavy Demo Charges",
+						"points": 5,
+						"perModel": true,
+						"unavailableWithLocal": ["Light Demo Charges"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Rifle Team;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Guerrilla Cell",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "GC",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 27,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 12,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "Pistols",
+						"points": -3,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "LMG",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Fieldcraft","Forward Position","Infiltration"],
+				"specialText": "Rifle Team;\n 1 NCO\n 2 Soldiers",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Cavalry Troop",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Cav",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Cavalry","Tough Fighters"],
+				"specialText": "Horse Mounted Cavalry Squad;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Cavalry Carbines","Swords"]
+			},
+			{
+				"name": "Mongolian Cavalry Troop",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Main Team",
+						"limit": 9,
+						"perParent": true
+					},
+					{
+						"key": "Cav",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 16,
+						"increment": true,
+						"max": 5,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Cavalry","Tough Fighters","Born in the Saddle"],
+				"specialText": "Horse Mounted Cavalry Squad;\n 1 NCO\n 4 Soldiers",
+				"equipment": ["Rifles","Swords"]
+			},
+			{
+				"name": "Scout Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Scout Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"points": 45,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "SMGs",
+						"points": 3,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun"
+					},
+					{
+						"name": "Horses",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Behind Enemy Lines"],
+				"specialText": "Scout Squad;\n 1 NCO\n 2 Soldiers",
+				"equipment": ["Rifle"]
+			},
+			{
+				"name": "Night Infiltrators",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Infiltrator Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 33,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 42,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 11,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"]
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"max": 3,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Forward Deployment"],
+				"specialText": "Infiltrator Squad;\n 1 NCO\n 2 Soldiers",
+				"equipment": ["Rifle"]
+			},
+			{
 				"name": "Conscript Squad (Conscript Levy)",
 				"factions": [],
 				"order": 1,
@@ -1867,6 +2992,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					}
@@ -3521,6 +4649,9 @@
 						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -3576,6 +4707,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					}
 				],
@@ -3625,6 +4759,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					}
@@ -3748,6 +4885,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -3851,6 +4991,9 @@
 						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -3893,6 +5036,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
 					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
@@ -4011,6 +5157,9 @@
 						"all": [{ "in": "British Reinforced Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					},
 					{
@@ -4108,6 +5257,51 @@
 				],
 				"keywords": [],
 				"specialText": "Mortar Team;\n 1 Mortar Operator\n 3 Assistants",
+				"equipment": ["Heavy Mortar Team"]
+			},
+			{
+				"name": "Chinese Heavy Mortar Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]	
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Mortar Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 46,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Mortar Team;\n 1 Mortar Operator\n 6 Assistants",
 				"equipment": ["Heavy Mortar Team"]
 			},
 			{
@@ -4490,6 +5684,347 @@
 				"keywords": [],
 				"specialText": "Field Gun Team;\n 5 Gun Operators",
 				"equipment": ["Medium AT Gun","Gun Shield"]
+			},
+			{
+				"name": "75mm Type 41 Light Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Loaders",
+						"points": 5,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced"]
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer","Gun Shield"]
+			},
+			{
+				"name": "75mm M1 A1 Pack Light Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer"]
+			},
+			{
+				"name": "15cm SFH18 Heavy Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 92,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 115,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 138,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 5 Gun Operators",
+				"equipment": ["Heavy Howitzer","Gun Shield"]
+			},
+			{
+				"name": "57mm M18 Light Howitzer",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 30,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 36,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Spotter",
+						"points": 10,
+						"addsModels": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light Howitzer"]
+			},
+			{
+				"name": "45mm Model 1937 Light AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Light AT Gun"]
+			},
+			{
+				"name": "M-42 Light AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Improved Ballistics"],
+				"specialText": "Field Gun Team;\n 2 Gun Operators",
+				"equipment": ["Light AT Gun","Gun Shield"]
+			},
+			{
+				"name": "ZiS-3 Medium AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 4,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Versatile"],
+				"specialText": "Field Gun Team;\n 3 Gun Operators",
+				"equipment": ["Medium AT Gun"]
+			},
+			{
+				"name": "BS-3 Heavy AT Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Artillery",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Field Gun Team;\n 5 Gun Operators",
+				"equipment": ["Heavy AT Gun","Gun Shield"]
 			},
 			{
 				"name": "Light Howitzer",
@@ -6337,10 +7872,134 @@
 				"equipment": ["Turret Mounted Coaxial MMG"]
 			},
 			{
+				"name": "M3 A3 'Stuart' Mk.V Light Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 108,
+						"availableIn":["North Korean People's Army"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 162,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "Tracked Tank;\n Damage Value: 8+",
+				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Coaxial MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "IS-2 Heavy Tank",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 320,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 384,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Improved HE","Slow Load"],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Turret Mounted Heavy AT Gun","Turret Mounted Coaxial MMG","Turret Mounted Rear Facing MMG","Hull Mounted MMG"]
+			},
+			{
+				"name": "ISU-122 Assault Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 6,
+				"limits": [
+					{
+						"key": "Tonk",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"points": 300,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 360,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"points": 25,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": ["Improved HE"],
+				"specialText": "Tracked Tank;\n Damage Value: 10+",
+				"equipment": ["Hull Mounted Heavy AT Gun"]
+			},
+			{
 				"name": "T-34/85 Medium Tank",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					}
@@ -6359,6 +8018,7 @@
 					{
 						"name": "Inexperienced",
 						"points": 188,
+						"availableIn":["North Korean People's Army"],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -6412,7 +8072,7 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Versitile - Medium AT",
+						"name": "Versatile - Medium AT",
 						"points": 10,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
@@ -6587,6 +8247,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					}
 				],
@@ -6627,6 +8290,9 @@
 				"order": 1,
 				"availableIn": [
 					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
 						"all": [{ "in": "Reinforced Platoon"	}, { "in": "Republic of Korea" }]			
 					}
 				],
@@ -6644,11 +8310,18 @@
 					{
 						"name": "Inexperienced",
 						"points": 72,
+						"availableIn":["Republic of Korea"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 90,
+						"availableIn":["Chinese People's Volunteer Army"],
 						"requireChooseOneKey": "morale"
 					}
 				],
@@ -7692,10 +9365,85 @@
 				"equipment": ["Hull Mounted LMG"]
 			},
 			{
+				"name": "Morris 15CWT Truck Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 25,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 31,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 37,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 8\n Tow: L/M AT Gun, L/M Howitzer, L/H AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "Buessing-Nag Truck Transport",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
+					{
+						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 7,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"points": 34,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"points": 43,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"points": 52,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Wheeled Transport;\n Damage Value: 6+\n Transport: 14\n Tow: L/M AT Gun, L/M Howitzer, L/H AA Gun",
+				"equipment": []
+			},
+			{
 				"name": "Gaz 'Jeep' Transport",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "Chinese Reinforced Platoon"	}, { "in": "Chinese People's Volunteer Army" }]			
+					},
 					{
 						"all": [{ "in": "North Korean Reinforced Platoon"	}, { "in": "North Korean People's Army" }]			
 					}
