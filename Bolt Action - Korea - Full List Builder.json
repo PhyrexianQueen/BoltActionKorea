@@ -138,6 +138,7 @@
 ],
 "data": 
 	{
+		"dataTableKeys": ["units"],
 		"factions": [
 			{
 				"name": "British Commonwealth",
